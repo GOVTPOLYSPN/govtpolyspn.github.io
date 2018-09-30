@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Government Polytechnic Shahjahanpur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Images/Home.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body onload="carousel()" id="home">
+    <div class="container"><!--This div contains everything inside body-->
+
+        <div id="image">
+                <h1 id="text" >Government Polytechnic Shahjahanpur</h1>
+        </div>
+        <!--carousel() function in JS-->
+        <script>
+            //var i for slide index
+            var  i = 0;
+        function carousel(){
+            //must/should declared at the top can be after vars declaration
+            var imgary = ['Img1', 'Img2', 'Img3', 'Img4', 'Img5', 'Img6', 'Img7', 'Img8', 'Img9', 'Img10'];
+            var txtary = ['White', 'Green', 'LIME', 'FUCHSIA', 'Maroon', 'Tomato', 'Magenta', 'Orange', 'white', 'Orange'];
+            //decalring variables to get image and para div's
+            var text = document.getElementById("text");
+            var img = document.getElementById("image");
+            text.style.color = txtary[i];
+            img.style.backgroundImage = "url(Images/small/"+imgary[i]+".jpg)";
+            if (i == (imgary.length-1)) {
+                i = 0;
+            }else{
+                return i++;
+            }
+            
+        }
+        window.setInterval("carousel()", 4000);
+        
+        </script>
+        <!--carousel script ended-->
+
+        <!--navbar starting-->
+        <div class="navbar" id="navbar">
+            <a href="#">HOME</a>
+            <a href="Pages/news.html">NEWS</a>
+            <a href="Pages/aboutus.html">ABOUT US</a>
+            <a href="pages/syllabus.html">SYLLABUS</a>
+            
+            <select name="faculty" onchange="location = this.value;" class="left">
+                    <option class="option" value="javascript:void(0)">FACULTY &AMP; DEPARTMENT</option>
+                    <option class="option" value="pages/faculty&dept/cse.html">DEPT. OF CSE</option>
+                    <option class="option" value="pages/faculty&dept/am.html">DEPT. OF Automobile Engg.</option>
+                    <option class="option" value="pages/faculty&dept/mp.html">DEPT. OF MP</option>
+                    <option class="option" value="pages/faculty&dept/civil.html">DEPT. OF CIVIL</option>
+                    <option class="option" value="pages/faculty&dept/ee.html">DEPT. OF EE</option>
+                    <option class="option" value="pages/faculty&dept/elx.html">DEPT. OF ELX</option>
+                    <option class="option" value="pages/faculty&dept/me.html">DEPT. OF ME</option>
+                    <option class="option" value="pages/faculty&dept/che.html">DEPT. OF CHE</option>
+                </select>
+            <a href="#" class="right">LOG IN</a>
+        </div>
+        <!--position sticky is not working so using this script-->
+        <script>
+                    // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        <!--position sticky is not working so using this script-->
+        
+
+        <!--Navbar ending here -->
+        <div class="principal">
+            <h1>PRINCIPAL'S MESSAGE</h1>
+            <img src="Images/logo/Home.png">
+            <span>
+                    <h3>Mr. Santosh Singh</h3>
+                    <h4>Principal, Government Polytechnic Shahjahanpur</h4>
+            </span>
+            <div class="msg">
+            <p><span style="font-weight: bold;">Dear Students,</span><br><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As we step into this new academic year, filled with hope and dreams of scaling new heights,
+                I wish to reiterate the importance of few things that we have to keep in mind. 
+                Parents should remember that children should not be forced, but should be guided to 
+                achieve whatever goals they may have in their minds in an easy and pleasing manner, 
+                so that we may be able to discover the particular touch of genius in each one of them.
+                The purpose of education is to teach our children to think and develop a capacity 
+                to reason out facts. Students should keep in mind the importance of planning and 
+                prioritizing their time and the effective use of it which are essential to achieve 
+                success.<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Students should always think and review – discover the cause and effect of every event,
+               in which they are involved. Do not surrender or become a slave to youthful fancies and 
+               indulgences. Be steady in your studies. Learn to enjoy hard work – particularly 
+               your studies. 
+               Think wisely, think systematically. Always prepare yourself for next day’s lesson. 
+               Be very serious and attentive in class.<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preserve our heritage and environment for yourself as well as for your next generation.
+               Always be a soldier to defend and preserve our traditions and our territory.<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With experienced and dedicated teachers and excellent infrastructure, our college helps 
+               students to realize their goals in life. I encourage all students to take advantage of 
+               the opportunities provided by the college and involve themselves in all the extra curricular
+               activities that are offered. The overall development of the mind and body is a sign of a 
+               healthy and complete development. 
+               <br><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hard work, dedication and perseverance are the most 
+               important traits in a person that lead to success. The future belongs to you; your need, 
+               therefore, is to prepare yourself for an active participation in the world. 
+               This participation demands that you become well informed and hence develop yourself like a 
+               pioneer and ultimately grow as responsible men and women.
+               <br><br>
+<blockquote style="font-weight: bolder;text-indent: 20px; font-family: 'Marck Script', 'Lucida Calligraphy';font-size: 20px;">
+                 “We cannot always build the future for our youth, but we can build our 
+                   youth for the future”. Remember “The reward of every good action will be good only”.
+                </blockquote>
+            
+               <p style="text-align: left;">Wishing you all Good Luck .<br>
+               <br>
+               With Prayers,<br>
+               Principal</p>
+            </p>
+            </div>
+        </div>
+
+        <div class="evt">
+            <h1 style="padding-bottom: 50px;">LEATEST EVENTS</h1>
+        <div class="events">
+
+            <div class="box">
+                <img src="Images/small/Img8.jpg">
+                <h3>TEACHER'S DAY <br> CELEBRATION</h3>
+                <p>Hard work, dedication and perseverance are the most important traits in a person that 
+                    lead to success. The future belongs to you; your need, therefore, is to prepare 
+                    yourself for an active participation in the world. This participation demands that 
+                    you become well informed and hence develop yourself like a pioneer and ultimately 
+                </p><br>
+                <a href="Pages/news.html">KNOW MORE</a>
+            </div>
+            <div class="box">
+                <img src="Images/small/Img5.jpg">
+                <h3>INDEPENDENCE DAY <br>CELEBRATION</h3>
+                <p>Hard work, dedication and perseverance are the most important traits in a person that 
+                    lead to success. The future belongs to you; your need, therefore, is to prepare 
+                    yourself for an active participation in the world. This participation demands that 
+                    you become well informed and hence develop yourself like a pioneer and ultimately 
+                </p><br>
+                <a href="Pages/news.html">KNOW MORE</a>
+            </div>
+            <div class="box">
+                <img src="Images/small/Img3.jpg">
+                <h3>REPUBLC DAY  <br>CELEBRATION</h3>
+                <p>Hard work, dedication and perseverance are the most important traits in a person that 
+                    lead to success. The future belongs to you; your need, therefore, is to prepare 
+                    yourself for an active participation in the world. This participation demands that 
+                    you become well informed and hence develop yourself like a pioneer and ultimately 
+                </p><br>
+                <a href="Pages/news.html">KNOW MORE</a>
+            </div>
+        </div>
+        </div>
+
+    <div class="imgglry">
+      <h1 style="padding-top: 10%; margin:0px;">IMAGE GALLARY</h1>
+    </div>
+    <!-----------------------------------UPCOMING EVENTS------------------------------------------------->
+    <div class="row" style="margin-top: 10%;">
+            <div class="column">
+              <img src="Images/small/Img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="Images/small/Img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="Images/small/Img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="Images/small/Img9.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+          </div>
+          
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="Images/small/Img8.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="Images/small/Img7.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="Images/small/Img5.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/small/Img3.jpg" style="width:100%">
+              </div>
+          
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="Images/small/Img1.jpg" onclick="currentSlide(1)" alt="Parking">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="Images/small/Img2.jpg" onclick="currentSlide(2)" alt="Building">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="Images/small/Img3.jpg" onclick="currentSlide(3)" alt="Entrance">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="Images/small/Img9.jpg" onclick="currentSlide(4)" alt="Play Ground">
+              </div>
+            </div>
+          </div>
+          <script>
+                // Open the Modal
+                function openModal() {
+                  document.getElementById('myModal').style.display = "block";
+                }
+                
+                // Close the Modal
+                function closeModal() {
+                  document.getElementById('myModal').style.display = "none";
+                }
+                
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                // Next/previous controls
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  var captionText = document.getElementById("caption");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+          </script>
+</div>
+
+<div class="footer">
+                
+    <div class="menubar">
+      <a href="#">LOGIN</a>
+      <a href="Pages/aboutus.html">FACULTY</a>
+      <a href="#">LOCATION</a>
+      <a href="#">QNA</a>
+    </div>
+  
+    <div class="content">
+    
+      <div class="fbox1">
+      
+        <a href="#home"><img src="Images/small/Img2.jpg" class="mainimg"></a>
+        <h1 style="font-size: 17px;">Government Polytechnic Shahjahanpur</h1>
+        <address>
+          Government Polytechnic Shahjahanpur, 
+          Near oriental Bank of Commerce,
+          Lalpur, Shahjahanpur (U.P.)
+        </address>
+      </div>
+      <div class="fbox2">
+          <h4>Quick Links</h4>
+        <div class="links">
+            <a href="Pages/syllabus.html">SYLLABUS</a>
+            <a href="Pages/aboutus.html">BRANCHES &amp; FACULTY</a>
+            <a href="Pages/news.html">NEWS</a>
+        </div>
+      </div>
+      <div class="fbox3">
+      
+        <form>
+          <fieldset>
+            <legend>Contact Form</legend>
+            <input type="text" placeholder="Name" name="name" id="name">
+            <input type="text" placeholder="Email" name="mail" id="mail">
+            <input type="text" placeholder="Type Your Message Here....." name="msg" id="msg">
+            <input type="submit" value="SUBMIT">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="copyrights">
+    
+      <p>COPYRIGHTS &copy; 1981-2018 MARSS CORP.</p>
+    </div>
+</div>
+</body>
+</html>

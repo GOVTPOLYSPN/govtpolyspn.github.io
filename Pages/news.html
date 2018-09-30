@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>News and Events | Government Polytechnic Shahjahanpur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" type="image/png" href="../Images/logo/bteup1.jpg">
+</head>
+<body class="news" onload="carousel()">
+    <img src="../Images/logo/banner.png" class="headimg">
+    <div class="container">
+       
+            
+        <!--navbar starting-->
+        <div class="navbar" id="navbar">
+            <a href="../index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="syllabus.html">SYLLABUS</a>
+            
+            <select name="syllabus" onchange="location = this.value;" class="left">
+                    <option class="option" value="javascript:void(0)">FACULTY &AMP; DEPARTMENT</option>
+                    <option class="option" value="faculty&dept/cse.html">DEPT. OF CSE</option>
+                    <option class="option" value="faculty&dept/am.html">DEPT. OF Automobile Engg.</option>
+                    <option class="option" value="faculty&dept/mp.html">DEPT. OF MP</option>
+                    <option class="option" value="faculty&dept/civil.html">DEPT. OF CIVIL</option>
+                    <option class="option" value="faculty&dept/ee.html">DEPT. OF EE</option>
+                    <option class="option" value="faculty&dept/elx.html">DEPT. OF ELX</option>
+                    <option class="option" value="faculty&dept/me.html">DEPT. OF ME</option>
+                    <option class="option" value="faculty&dept/che.html">DEPT. OF CHE</option>
+                </select>
+            <a href="#" class="right">LOG IN</a>
+        </div>
+            <!--position sticky is not working so using this script-->
+            <script>
+                        // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+    
+                // Get the navbar
+                var navbar = document.getElementById("navbar");
+    
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+    
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+            </script>
+            <!--position sticky is not working so using this script-->
+            
+    
+            <!--Navbar ending here -->
+            <!--main container should be flex-->
+            <div class="main-container">
+                <!--event container with display flex upto 60%-->
+                <div class="event-container">
+                    <!--leatest events container starting-->
+                    <div class="leatest-container">
+                        <!--heading for upcoming events-->
+                        <h1>Leatest Events</h1>
+
+                        <div class="levt">
+                            <h2>Independence Day Celebration</h2>
+                            <div class="images" id="image1"></div>
+                            <p>Martin Luther King’s words are instructive of the spirit that brings us 
+all into this room today. We are more than the sum of our individual ambitions; we are indeed “caught 
+in an inescapable network of mutuality,” and as such we have commitments to those in our neighborhoods
+, our communities, this city, this nation, and indeed the world. But I think more than that, 
+King’s example demonstrates how we should understand ourselves as members of the University 
+of Chicago community.
+As members of the UChicago community, we all are indebted—well, some of us literally—but all of us are 
+indebted to this institution because we have been afforded opportunities, knowledge, and new ways of 
+thinking that form a portion of our identity. I don’t need to remind you of the astounding work our 
+alumni have done throughout the past century or so. It is because of their legacy that we have inherited 
+this magnificent institution.
+</p>
+                        </div>
+                        <div class="levt">
+                                <h2>Annual Sports Day</h2>
+                            <div class="images" id="image2"></div>
+                            <p>Martin Luther King’s words are instructive of the spirit that brings us 
+                                    all into this room today. We are more than the sum of our individual ambitions; we are indeed “caught 
+                                    in an inescapable network of mutuality,” and as such we have commitments to those in our neighborhoods
+                                    , our communities, this city, this nation, and indeed the world. But I think more than that, 
+                                    King’s example demonstrates how we should understand ourselves as members of the University 
+                                    of Chicago community.
+                                    As members of the UChicago community, we all are indebted—well, some of us literally—but all of us are 
+                                    indebted to this institution because we have been afforded opportunities, knowledge, and new ways of 
+                                    thinking that form a portion of our identity. I don’t need to remind you of the astounding work our 
+                                    alumni have done throughout the past century or so. It is because of their legacy that we have inherited 
+                                    this magnificent institution.
+                            </p>
+                        </div>
+                        <div class="levt">
+                                <h2>Alumni Meet</h2>
+                            <div class="images" id="image3"></div>
+                            <p>Martin Luther King’s words are instructive of the spirit that brings us 
+                                    all into this room today. We are more than the sum of our individual ambitions; we are indeed “caught 
+                                    in an inescapable network of mutuality,” and as such we have commitments to those in our neighborhoods
+                                    , our communities, this city, this nation, and indeed the world. But I think more than that, 
+                                    King’s example demonstrates how we should understand ourselves as members of the University 
+                                    of Chicago community.
+                                    As members of the UChicago community, we all are indebted—well, some of us literally—but all of us are 
+                                    indebted to this institution because we have been afforded opportunities, knowledge, and new ways of 
+                                    thinking that form a portion of our identity. I don’t need to remind you of the astounding work our 
+                                    alumni have done throughout the past century or so. It is because of their legacy that we have inherited 
+                                    this magnificent institution.
+                            </p>
+                        </div>
+
+                    </div>
+
+                        <!--diffrent image sliding for each event-->
+                            <!--carousel() function in JS-->
+                            <script>
+                                   //var i for slide index
+                                   var  i = 0;
+                               function carousel(){
+                                   //must/should declared at the top can be after vars declaration
+                                   var imgary1 = ['Img1', 'Img2', 'Img3'];
+                                   var imgary2 = ['Img4', 'Img5', 'Img6'];
+                                   var imgary3 = ['Img7', 'Img8', 'Img9'];
+                                   //decalring variables to get image and para div's
+                                   var img1 = document.getElementById("image1");
+                                   var img2 = document.getElementById("image2");
+                                   var img3 = document.getElementById("image3");
+                                   img1.style.backgroundImage = "url(../Images/small/"+imgary1[i]+".jpg)";
+                                   img2.style.backgroundImage = "url(../Images/small/"+imgary2[i]+".jpg)";
+                                   img3.style.backgroundImage = "url(../Images/small/"+imgary3[i]+".jpg)";
+                                   if (i == (imgary1.length-1)) {
+                                       i = 0;
+                                   }else{
+                                       return i++;
+                                   }
+
+                               }
+                               window.setInterval("carousel()", 3000);
+
+                               </script>
+                </div><!--events-container ended here-->
+
+                
+                
+                <!--news container with display 30% flex-->
+                <div class="news-ticker">
+                    <!--News ticker-->
+                    <h1>News</h1>
+                    <!--news ticker div-->
+                    <div class="ticker">
+
+                        <ul class="newslist">
+                    <li class="new">
+                        <a href="#">
+                            All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                        </a>
+                    </li>
+                    <li class="new">
+                        <a href="#">
+                            All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                        </a>
+                    </li>
+                    
+                    <li class="new">
+                            <a href="#">
+                                All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                            </a>
+                    </li>
+                    <li class="new">
+                        <a href="#">
+                            All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                        </a>
+                    </li>
+                    
+                    <li class="new">
+                            <a href="#">
+                                All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                        </a>
+                    </li>
+                    
+                    <li>
+                            <a href="#">
+                                All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                        </a>
+                    </li>
+                    
+                    <li>
+                            <a href="#">
+                                All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                        </a>
+                    </li>
+                    
+                    <li>
+                            <a href="#" >
+                                All students are informed that last date for scholarship file submission is <b>10/06/2018</b>
+                            </a>
+                    </li>
+
+
+                        </ul>
+                    </div>
+
+
+                <!--upcoming events container starting-->
+                <div class="upcoming-container">
+
+                    <h1>Upcoming Events</h1>
+
+
+                    <ul class="upcoming-list">
+
+                        <li class="upcoming-items">
+                            THE CONVOCATION CEREMONY WILL HELD AT <b>04/10/2018</b> IN COLLEGE CAMPUS.
+                        </li>
+                        <li class="upcoming-items">
+                            STUDENTS SHOULD BR PREPARED FOR ANNUAL SPORTS DAY FUNCTIONS.
+                        </li>
+                        <li class="upcoming-items">
+                            STUDENTS CAN APPLY JEECUP ENTRANCE EXAMINATION FROM DECEMBER
+                        </li>
+                        <li class="upcoming-items">
+                            EXAMINATION FOR YEAR 2018-19 WILL BE STARTED FROM DECEMBER. BE PREPARED
+                        </li>
+
+                    </ul>
+                    
+                </div>
+                
+                <!--upcoming event container ended-->
+
+                <!--ending of news ticker-->
+                </div>
+
+</div>
+    </div>
+
+
+    <div class="footer">
+
+          
+            <div class="content">
+            
+              <div class="fbox1">
+              
+                <a href="../index.html"><img src="../Images/small/Img2.jpg" class="mainimg"></a>
+                <h1 style="font-size: 17px;">Government Polytechnic Shahjahanpur</h1>
+                <address>
+                  Government Polytechnic Shahjahanpur, 
+                  Near oriental Bank of Commerce,
+                  Lalpur, Shahjahanpur (U.P.)
+                </address>
+              </div>
+              <div class="fbox2">
+                  <h4>Quick Links</h4>
+                <div class="links">
+                    <a href="syllabus.html">SYLLABUS</a>
+                    <a href="aboutus.html">BRANCHES</a>
+                    <a href="news.html">NEWS</a>
+                </div>
+              </div>
+              <div class="fbox3">
+              
+                <form>
+                  <fieldset>
+                    <legend>Contact Form</legend>
+                    <input type="text" placeholder="Name" name="name" id="name">
+                    <input type="text" placeholder="Email" name="mail" id="mail">
+                    <input type="text" placeholder="Type Your Message Here....." name="msg" id="msg">
+                    <input type="submit" value="SUBMIT">
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="copyrights">
+            
+              <p>COPYRIGHTS &copy; 1981-2018 MARSS CORP.</p>
+            </div>
+        </div>
+</body>
+</html>

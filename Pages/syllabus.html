@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Syllabus | Government Polytechnic Shahjahanpur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../Images/logo/bteup1.jpg">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body class="syllabus" id="slbs">
+    <img src="../Images/logo/GPSLOGO.png"  width="100%" height="auto" class="headimg">
+    <div class="container">
+
+      <!--navbar starting-->
+        <div class="navbar" id="navbar">
+          <a href="../index.html">HOME</a>
+          <a href="news.html">NEWS</a>
+          <a href="aboutus.html">ABOUT US</a>
+          <a href="#slbl">SYLLABUS</a>
+          
+          <select name="syllabus" onchange="location = this.value;" class="left">
+                  <option class="option" value="javascript:void(0)">FACULTY &AMP; DEPARTMENT</option>
+                  <option class="option" value="faculty&dept/cse.html">DEPT. OF CSE</option>
+                  <option class="option" value="faculty&dept/am.html">DEPT. OF Automobile Engg.</option>
+                  <option class="option" value="faculty&dept/mp.html">DEPT. OF MP</option>
+                  <option class="option" value="faculty&dept/civil.html">DEPT. OF CIVIL</option>
+                  <option class="option" value="faculty&dept/ee.html">DEPT. OF EE</option>
+                  <option class="option" value="faculty&dept/elx.html">DEPT. OF ELX</option>
+                  <option class="option" value="faculty&dept/me.html">DEPT. OF ME</option>
+                  <option class="option" value="faculty&dept/che.html">DEPT. OF CHE</option>
+              </select>
+          <a href="#" class="right">LOG IN</a>
+                        <!--position sticky is not working so using this script-->
+                      <script>
+                        // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+                      
+                // Get the navbar
+                var navbar = document.getElementById("navbar");
+                      
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+                      
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+              </script>
+              <!--position sticky is not working so using this script-->
+        </div>
+      
+      <!--Navbar ending here with script-->
+
+      <div class="syllabus-container">
+        
+      </div>
+
+    </div>
+    <!--Container div ending-->
+
+
+    <!--Footer Starting-->
+    <div class="footer">
+
+      
+        <div class="content">
+        
+          <div class="fbox1">
+          
+            <a href="#home"><img src="../Images/small/Img2.jpg" class="mainimg"></a>
+            <h1 style="font-size: 17px;">Government Polytechnic Shahjahanpur</h1>
+            <address>
+              Government Polytechnic Shahjahanpur, 
+              Near oriental Bank of Commerce,
+              Lalpur, Shahjahanpur (U.P.)
+            </address>
+          </div>
+          <div class="fbox2">
+              <h4>Quick Links</h4>
+            <div class="links">
+                <a href="#">SYLLABUS</a>
+                <a href="#">BRANCHES</a>
+                <a href="#">REGISTRATION</a>
+                <a href="#">NEWS</a>
+            </div>
+          </div>
+          <div class="fbox3">
+          
+            <form>
+              <fieldset>
+                <legend>Contact Form</legend>
+                <input type="text" placeholder="Name" name="name" id="name">
+                <input type="text" placeholder="Email" name="mail" id="mail">
+                <input type="text" placeholder="Type Your Message Here....." name="msg" id="msg">
+                <input type="submit" value="SUBMIT">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="copyrights">
+        
+          <p>COPYRIGHTS &copy; 1981-2018 MARSS CORP.</p>
+        </div>
+    </div>
+    <!--Footer Ending-->
+</body>
+</html>
