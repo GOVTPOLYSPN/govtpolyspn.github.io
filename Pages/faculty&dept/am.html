@@ -19,8 +19,33 @@
             <h2 id="txt"></h2>
           </div>
 
+          <!--carousel() function in JS-->
+          <script>
+              //var i for slide index
+              var  i = 0;
+          function carousel(){
+              //must/should declared at the top can be after vars declaration
+              var imgary1 = ['Img1', 'Img2', 'Img3', 'Img4', 'Img5'];
+              var imgary2 = ['Img6', 'Img7', 'Img8', 'Img9', 'Img10'];
+              var txtary = ["Head Of Department", "Batch 2018","Final Year", "Second Year", "First Year"]
+              //decalring variables to get image and para div's
+              var img1 = document.getElementById("lab");
+              var img2 = document.getElementById("student");
+              var txt1 = document.getElementById("txt");
+              img1.style.backgroundImage = "url(../../Images/small/"+imgary1[i]+".jpg)";
+              img2.style.backgroundImage = "url(../../Images/small/"+imgary2[i]+".jpg)";            
+              txt1.innerHTML = txtary[i];
+              if (i == (imgary1.length-1)) {
+                  i = 0;
+              }else{
+                  return i++;
+              }
+              
+          }
+          window.setInterval("carousel()", 3000);
           
-
+          </script>
+          <!--carousel script ended-->
 
          <!--navbar starting-->
          <div class="navbar" id="navbar">
@@ -85,7 +110,7 @@
                 Specialisation in Production Engg., Automobile Engg.,
                 Refrigeration and Air Conditioning, Repair and Maintenance
                 and Computer Aided Design.
-                As a first renovating step a paper " Introduction to
+                <span class="msghid">As a first renovating step a paper " Introduction to
                 Computer" has been introduced in the course. It is the need
                 of the time. The portion of the syllabus common for
                 Production, Auto & Refrigeration Air conditioning, Repair
@@ -100,10 +125,12 @@
                 change in the end will necessarily develop more confidence
                 in the students. He will able to inhance his knowledge in
                 the other fields of specialisation with little effort and
-                can with stand the responsibility. </p>
+                can with stand the responsibility. 
+              </span>
+              </p>
           </div>
 
-          <h2  style="margin-top:10%">DEPARTMENT MEMBERS</h2>
+          <h2  style="margin-top:10%" class="dept">DEPARTMENT MEMBERS</h2>
           <div class="over-flow">
               <table class="faculty-list">
             
@@ -192,36 +219,7 @@
 
           <h2 style="margin-top: 10%">WORKSHOP</h2>
           <div class="labs" id="lab">
-            
-
           </div>
-          <!--carousel() function in JS-->
-        <script>
-            //var i for slide index
-            var  i = 0;
-        function carousel(){
-            //must/should declared at the top can be after vars declaration
-            var imgary1 = ['Img1', 'Img2', 'Img3', 'Img4', 'Img5'];
-            var imgary2 = ['Img6', 'Img7', 'Img8', 'Img9', 'Img10'];
-            var txtary = ["Head Of Department", "Batch 2018","Final Year", "Second Year", "First Year"]
-            //decalring variables to get image and para div's
-            var img1 = document.getElementById("lab");
-            var img2 = document.getElementById("student");
-            var txt1 = document.getElementById("txt");
-            img1.style.backgroundImage = "url(../../Images/small/"+imgary1[i]+".jpg)";
-            img2.style.backgroundImage = "url(../../Images/small/"+imgary2[i]+".jpg)";            
-            txt1.innerHTML = txtary[i];
-            if (i == (imgary1.length-1)) {
-                i = 0;
-            }else{
-                return i++;
-            }
-            
-        }
-        window.setInterval("carousel()", 3000);
-        
-        </script>
-        <!--carousel script ended-->
         </div>
 
 

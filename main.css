@@ -142,7 +142,7 @@ body{
 }
 
 
-/*flexboxes*/
+/*flexboxes    events container*/
 .events{
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +187,6 @@ body{
 .UpcomingEvents h1{
     padding-top: 10%;
 }
-
-
 /*box hover*/
 .box:hover{
     box-shadow: 0px 0px 200px 20px black;
@@ -197,7 +195,10 @@ body{
 
 
 /*IMAGE GALARYs*/
-
+.imgglry h1{
+    padding : 10% 0 0;
+    margin: 0px;
+}
 .row > .column {
     padding: 0 8px;
   }
@@ -219,7 +220,6 @@ body{
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -276,6 +276,7 @@ body{
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .prev{
       float: left;
@@ -456,11 +457,143 @@ input[type="submit"]:hover{
 
 
 /*FACULTY AND DEPARTMENT*/
-.main-heading{
 
-    color: black;
-    background: rgba(255, 255, 255, 0.9);
-    font-size: 5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 5px 7px 8px gray
+
+
+
+/*Responsive stuff*/
+
+
+@media screen and (max-width: 450px){
+
+    body{
+        background-size: cover;
+    }
+    .container{
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    /*making image and text smaller in size*/
+    #text{
+        font-size: 1.2rem;
+        border-radius: 0;
+        padding: 5px 0;
+    }
+    #image{
+
+        height: 300px;
+        border-radius: 0;
+    }
+
+    .navbar a, .left, .right, .option{
+
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid white;
+    }
+
+    /*Principal conatiner*/
+    .principal{
+        padding: 5% 4% 2%;
+    }
+    .principal h1, .evt h1, .imgglry h1{
+        font-size: 2rem;
+        color: black;
+        text-shadow: 2px 4px 3px gray;
+        padding-top: 5%;
+        font-weight: bolder;
+    }
+    .msghid{
+        display: none;
+    }
+    .msg p{
+        padding: 5% 0;
+    }
+
+    /*events container*/
+    .events{
+        
+        display: inline-block;
+    }
+    .box{
+        
+        margin: 5% 2% 0;
+        height: 350px;
+    }
+    .box:hover{
+        box-shadow: 0px 0px 50px 5px black;
+        transform: scale(0.9, 0.9);
+    }
+
+
+    /*imgglry container*/
+    .column{
+        display: none;
+        width: 100%;
+        padding: 0;
+    }
+     .modal {
+        display: block;
+        position: static;
+        padding: 2%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(255, 252, 252, 0.1);
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: rgba(0, 0, 0, .1);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 1200px; 
+      }
+      .mySlides img{
+          border-radius: 20px;
+      }
+      .close{
+          display: none;
+      }
+
+
+      /*Footer contauiner*/
+      .menubar,.fbox2{
+          display: none;
+      }
+
+      .content{
+          display: block;
+          width: 100%;
+      }
+      .fbox1,.fbox2,.fbox3{
+          padding: 0 0;
+      }
+      .fbox1{
+          padding-top: 5%;
+      }
+      .mainimg{
+          width: 200px;
+          height: auto;
+      }
+      fieldset{
+          border: 1px solid rgba(13, 13, 13, .1) ;
+          padding: 0 ;
+      }
+      legend{
+      
+          font-size: 30px;
+          font-weight: bold;
+          padding: 2% 0;
+      }
+      #name, #mail, #msg{
+          width: 100%;
+      }
+      
 }
