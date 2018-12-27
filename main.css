@@ -70,10 +70,10 @@ body{
 .navbar a, .left{
     float: left;
     padding: 16px 20px;
-    color: rgb(153, 153, 153);
+    color: black;
     text-decoration: none;
     outline: none;
-    background: rgb(34, 34, 34);
+    background: #71f5f0;
     font-size: 17px;
     font-weight: bold;
     position: sticky;
@@ -153,9 +153,9 @@ body{
     height: 550px;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 5px 5px 25px 5px black;
-    background: rgba(34, 34, 34, 0.5);
-    color: white;
+    box-shadow: 5px 0px 5px 5px black;
+    background: rgb(177, 253, 251);
+    color: black;
     letter-spacing: 2px;
     overflow: hidden;
 }
@@ -189,7 +189,7 @@ body{
 }
 /*box hover*/
 .box:hover{
-    box-shadow: 0px 0px 200px 20px black;
+    box-shadow: 0px 0px 20px 2px black;
     transform: scale(1.05, 1.05);
 }
 
